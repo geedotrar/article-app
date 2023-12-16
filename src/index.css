@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-page {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button-page-active {
+  color: #ffffff;
+  background-color: #51b15c;
+}
+
+.button-page-arrow {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.edit-icon {
+  color: white;
+  background-color: #cf8812;
+  padding: 4px;
+  border-radius: 9999px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-icon:hover {
+  background-color: #936317;
+}
+
+.delete-icon {
+  color: white;
+  background-color: #ff1d1d;
+  padding: 4px;
+  border-radius: 9999px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-icon:hover {
+  background-color: #be1d1d;
+}
+
+.sidebar-toggle-button {
+  top: 4px;
+  left: 4px;
+  z-index: 50;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  color: white;
+  background-color: #51b15c;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.sidebar-toggle-button:hover {
+  background-color: #33713b;
+}
+
+.text-red-500 {
+  color: red;
 }
